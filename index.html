@@ -217,7 +217,7 @@
         }
 
         .nav-logo img {
-            height: 200px;
+            height: 140px;
             width: auto;
             display: block;
         }
@@ -1416,6 +1416,17 @@
         .mobile-menu a:hover { color: var(--gold); }
 
         /* ─── Responsive ─── */
+        /* ─── Large desktop (1440px+) ─── */
+        @media (min-width: 1440px) {
+            .hero-content { padding: 0 8rem; }
+            .container { max-width: 1200px; }
+            .hero h1 { font-size: 6.5rem; }
+            .hero-sub { font-size: 2rem; }
+            .big-heading { font-size: 5.5rem; }
+            .nav-logo { left: 4rem; }
+        }
+
+        /* ─── Standard desktop → tablet landscape (1024px) ─── */
         @media (max-width: 1024px) {
             .framework-cards { grid-template-columns: 1fr; gap: 1px; }
             .week-columns { grid-template-columns: 1fr; }
@@ -1427,26 +1438,99 @@
             .approach-layout { grid-template-columns: 1fr; }
             .assessment-layout { grid-template-columns: 1fr; }
             .coaching-layout { grid-template-columns: 1fr; }
+            .hero-content { padding: 0 3rem; }
+            .nav-logo img { height: 110px; }
+            .nav-logo { left: 2rem; padding: 1.2rem; }
+            .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+            .hero-sub { font-size: clamp(1.1rem, 2.2vw, 1.6rem); }
+            .big-heading { font-size: clamp(2.2rem, 5.5vw, 4rem); }
+            .reality-text p, .approach-body p { font-size: clamp(1.1rem, 2.2vw, 1.6rem); }
         }
 
+        /* ─── Tablet portrait (768px) ─── */
         @media (max-width: 768px) {
-            section { padding: 6rem 0; }
+            section { padding: 4rem 0; }
             .container, .container-narrow { padding: 0 1.5rem; }
             .nav-bar { padding: 0.8rem 1.5rem; }
-            .nav-logo { left: 1.5rem; padding: 1rem; }
-            .nav-logo img { height: 120px; }
+            .nav-logo { left: 1rem; padding: 0.75rem; }
+            .nav-logo img { height: 60px; }
             .nav-links { display: none; }
             .nav-toggle { display: flex; }
             .mobile-menu { display: flex; }
-            .hero { min-height: 85vh; padding: 7rem 0 4rem; }
+            .hero { min-height: auto; padding: 7rem 0 4rem; }
             .hero-content { padding: 0 1.5rem; }
-            .hero h1 { font-size: clamp(2.4rem, 10vw, 3.5rem); }
-            .big-heading { font-size: clamp(2rem, 8vw, 3.5rem); }
-            .medium-heading { font-size: clamp(1.6rem, 6vw, 2.2rem); }
-            .footer-cta { padding: 6rem 0; }
+            .hero h1 { font-size: clamp(2rem, 7vw, 3rem); line-height: 1.05; margin-bottom: 1.5rem; }
+            .hero-sub { font-size: clamp(1rem, 3.5vw, 1.3rem); line-height: 1.5; margin-bottom: 2rem; }
+            .hero-cta-row { margin-top: 2rem; }
+            .hero-cta-row .btn { padding: 1.1rem 2.5rem; font-size: 0.85rem; }
+            .hero-small { font-size: 0.72rem; }
+            .big-heading { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+            .medium-heading { font-size: clamp(1.4rem, 5vw, 2rem); }
+            .section-label { font-size: 0.85rem; margin-bottom: 2rem; }
+            .reality-text p, .approach-body p { font-size: clamp(1rem, 3.5vw, 1.4rem); }
+            .reality-text .highlight { font-size: clamp(1rem, 3.5vw, 1.4rem); }
+            .reality { min-height: auto; padding: 4rem 0; }
+            .approach { min-height: auto; padding: 4rem 0; }
+            .mastermind-hero h2 { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+            .mastermind-hero .lead { font-size: clamp(1rem, 3.5vw, 1.4rem); }
+            .week-col p { font-size: clamp(1rem, 3.5vw, 1.4rem); }
+            .week-col { padding: 2rem 0; }
+            .benefits-list li { font-size: clamp(1rem, 3vw, 1.3rem); }
+            .investment-block .price { font-size: clamp(3rem, 10vw, 5rem); }
+            .investment-block .price-sub { font-size: clamp(0.9rem, 3vw, 1.1rem); }
+            .coach-info h3 { font-size: clamp(1.8rem, 6vw, 2.5rem); }
+            .coach-info p { font-size: clamp(1rem, 3vw, 1.3rem); }
+            .faq-question { font-size: clamp(1rem, 3.5vw, 1.3rem); }
+            .footer-cta { padding: 4rem 0; }
             .footer-cta-buttons { flex-direction: column; align-items: center; }
             .footer-inner { flex-direction: column; text-align: center; gap: 1rem; }
-            .investment-bar { flex-direction: column; text-align: center; padding: 2.5rem 2rem; }
+            .investment-bar { flex-direction: column; text-align: center; padding: 2.5rem 1.5rem; }
+            .quiz-field input, .quiz-field select { font-size: 1rem; padding: 0.9rem 1rem; }
+        }
+
+        /* ─── Large phone (480px) ─── */
+        @media (max-width: 480px) {
+            section { padding: 3rem 0; }
+            .container, .container-narrow { padding: 0 1.1rem; }
+            .hero-content { padding: 0 1.1rem; }
+            .nav-logo { left: 0.75rem; padding: 0.5rem; }
+            .nav-logo img { height: 44px; }
+            .hero { padding: 5.5rem 0 3rem; }
+            .hero h1 { font-size: clamp(1.6rem, 7.5vw, 2.4rem); letter-spacing: -0.03em; }
+            .hero-sub { font-size: clamp(0.95rem, 3.8vw, 1.15rem); line-height: 1.45; }
+            .hero-cta-row .btn { padding: 1rem 2rem; font-size: 0.82rem; width: 100%; text-align: center; }
+            .big-heading { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+            .medium-heading { font-size: clamp(1.3rem, 5.5vw, 1.8rem); }
+            .section-label { font-size: 0.75rem; letter-spacing: 0.2em; margin-bottom: 1.5rem; }
+            .reality-text p, .approach-body p { font-size: clamp(0.95rem, 3.8vw, 1.2rem); }
+            .reality-text { gap: 1rem; }
+            .approach-body p { margin-bottom: 1rem; }
+            .mastermind-hero h2 { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+            .mastermind-hero .lead { font-size: clamp(0.95rem, 3.8vw, 1.2rem); }
+            .mastermind-hero .btn { width: 100%; text-align: center; }
+            .week-col h4 { font-size: 0.85rem; }
+            .week-col p { font-size: clamp(0.95rem, 3.5vw, 1.15rem); }
+            .benefits-list li { font-size: clamp(0.95rem, 3.5vw, 1.15rem); padding-left: 1.5rem; }
+            .coach-photo img { max-height: 300px; }
+            .faq-question { font-size: clamp(0.95rem, 3.5vw, 1.15rem); padding: 1.2rem 0; }
+            .faq-answer-inner { font-size: clamp(0.9rem, 3.2vw, 1.05rem); }
+            .footer-cta h2 { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+            .footer-cta p { font-size: clamp(0.95rem, 3.5vw, 1.15rem); }
+        }
+
+        /* ─── Small phone (360px) ─── */
+        @media (max-width: 360px) {
+            .container, .container-narrow { padding: 0 0.9rem; }
+            .hero-content { padding: 0 0.9rem; }
+            .nav-logo { left: 0.5rem; padding: 0.4rem; }
+            .nav-logo img { height: 36px; }
+            .hero { padding: 5rem 0 2.5rem; }
+            .hero h1 { font-size: 1.5rem; line-height: 1.1; }
+            .hero-sub { font-size: 0.9rem; }
+            .big-heading { font-size: 1.4rem; }
+            .section-label { font-size: 0.7rem; }
+            .hero-cta-row .btn { padding: 0.9rem 1.5rem; font-size: 0.8rem; }
+            .investment-block .price { font-size: 2.5rem; }
         }
     </style>
 </head>
@@ -1488,7 +1572,7 @@
     <div class="hero-content" style="position:relative;z-index:2;">
         <div class="hero-text-block">
             <h1>Clarity doesn't come from thinking harder.<br><em>It comes from thinking with the right people.</em></h1>
-            <p class="hero-sub">Highgate Society provides structured coaching and mastermind programmes for senior professionals navigating complex transitions — in their careers, their businesses, and the way they lead.</p>
+            <p class="hero-sub">Highgate Society provides structured coaching and mastermind programmes for founders, executives, entrepreneurs, and senior leaders navigating complex transitions — in their careers, their businesses, and the way they lead.</p>
         </div>
         <div class="hero-cta-row">
             <a href="#assessment" class="btn btn-black">Take the Free Assessment &rarr;</a>
