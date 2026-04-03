@@ -1,0 +1,2232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highgate Society — Professional Coaching for the Age of AI</title>
+    <meta name="description" content="Mastermind groups and 1:1 coaching for founders, executives, and senior professionals navigating AI disruption. Built on peer-reviewed career psychology. Take the free assessment.">
+    <meta name="keywords" content="AI coaching, executive coaching, career disruption, AI career assessment, mastermind group, professional coaching, leadership coaching, AI strategy, career transition, Highgate Society">
+    <meta name="author" content="Highgate Society">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://highgatesociety.com">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Highgate Society — Professional Coaching for the Age of AI">
+    <meta property="og:description" content="Mastermind groups and 1:1 coaching for founders, executives, and senior professionals navigating AI disruption. Built on peer-reviewed career psychology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://highgatesociety.com">
+    <meta property="og:image" content="https://highgatesociety.com/logo.png">
+    <meta property="og:site_name" content="Highgate Society">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Highgate Society — Professional Coaching for the Age of AI">
+    <meta name="twitter:description" content="Mastermind groups and 1:1 coaching for founders, executives, and senior professionals navigating AI disruption.">
+    <meta name="twitter:image" content="https://highgatesociety.com/logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Highgate Society",
+        "description": "Professional coaching for founders, executives, and senior professionals navigating AI disruption. Mastermind groups and 1:1 coaching built on peer-reviewed career psychology.",
+        "url": "https://highgatesociety.com",
+        "email": "hello@highgatesociety.com",
+        "logo": "https://highgatesociety.com/logo.png",
+        "image": "https://highgatesociety.com/logo.png",
+        "priceRange": "€750",
+        "areaServed": "Worldwide",
+        "serviceType": ["Executive Coaching", "Mastermind Groups", "Career Assessment", "AI Strategy Coaching"],
+        "knowsAbout": ["Artificial Intelligence", "Career Transition", "Executive Development", "Leadership Coaching", "AI Disruption"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Coaching Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "The Highgate Society Mastermind",
+                    "description": "6-week peer mastermind for 5-7 senior professionals navigating AI disruption. Weekly 90-minute facilitated sessions, personalised readiness report, and structured accountability.",
+                    "price": "750",
+                    "priceCurrency": "EUR"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "1:1 Executive Coaching",
+                    "description": "Individual coaching engagements using validated career psychology frameworks, adapted to your specific situation, pace, and stakes."
+                },
+                {
+                    "@type": "Offer",
+                    "name": "AI Career Disruption Readiness Assessment",
+                    "description": "Free 24-question diagnostic built on peer-reviewed career psychology. Personalised report covering adaptability, transition phase, career drivers, and AI exposure.",
+                    "price": "0",
+                    "priceCurrency": "EUR"
+                }
+            ]
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Olga Viorel",
+            "jobTitle": "ICF-Certified Business & Team Coach"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --black: #1A1A1A;
+            --dark: #2A2A2A;
+            --gray-800: #333;
+            --gray-600: #666;
+            --gray-400: #999;
+            --gray-200: #E0E0E0;
+            --gray-100: #F2F2F2;
+            --white: #FFFFFF;
+            --gold: #C4A265;
+            --gold-light: #D4B97A;
+            --gold-dark: #A88B50;
+            --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--sans);
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.6;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        /* ─── Typography ─── */
+        .section-label {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 3rem;
+            display: inline-block;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 0.4rem;
+        }
+
+        .big-heading {
+            font-weight: 900;
+            font-size: clamp(2.8rem, 6.5vw, 5.5rem);
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            text-transform: none;
+        }
+
+        .medium-heading {
+            font-weight: 800;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            line-height: 1.08;
+            letter-spacing: -0.025em;
+        }
+
+        .body-text {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            line-height: 1.6;
+            color: var(--gray-600);
+            max-width: 560px;
+        }
+
+        .body-text-lg {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            line-height: 1.6;
+            color: var(--gray-600);
+        }
+
+        /* ─── Layout ─── */
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .container-narrow {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        section { padding: 30px 0 15rem; min-height: 75vh; }
+
+        /* ─── Nav ─── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 0;
+            transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
+        }
+
+        nav.nav-hidden {
+            transform: translateY(-100%);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .nav-bar {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            padding: 0.8rem 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .nav-logo {
+            display: block;
+            text-decoration: none;
+            position: fixed;
+            top: 0;
+            left: 3rem;
+            z-index: 101;
+            background: var(--white);
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.5s cubic-bezier(0.23,1,0.32,1);
+        }
+
+        nav.nav-hidden .nav-logo-ref {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        .nav-logo img {
+            height: 200px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--black); }
+
+        .nav-cta {
+            font-size: 0.72rem !important;
+            font-weight: 700 !important;
+            color: var(--white) !important;
+            background: var(--black);
+            padding: 0.65rem 1.5rem !important;
+            letter-spacing: 0.06em !important;
+            transition: background 0.3s !important;
+        }
+
+        .nav-cta:hover { background: var(--gold) !important; color: var(--white) !important; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--black);
+            transition: all 0.3s;
+        }
+
+        /* ─── Hero ─── */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: var(--white);
+            padding: 8rem 0 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content { max-width: 100%; margin: 0 auto; padding: 0 5rem; text-align: center; }
+
+
+        .hero h1 {
+            font-weight: 900;
+            font-size: clamp(3rem, 7.5vw, 6.5rem);
+            line-height: 0.95;
+            letter-spacing: -0.04em;
+            color: var(--black);
+            max-width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hero-text-block {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .hero-sub {
+            font-size: clamp(1.4rem, 2.2vw, 2rem);
+            line-height: 1.6;
+            color: var(--gray-600);
+            max-width: 100%;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 3rem;
+        }
+
+        .hero-cta-row .btn {
+            padding: 1.3rem 3.2rem;
+            font-size: 0.88rem;
+        }
+
+        .hero-small {
+            font-size: 0.78rem;
+            color: var(--gray-400);
+        }
+
+        /* ─── Buttons ─── */
+        .btn {
+            display: inline-block;
+            font-family: var(--sans);
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 1.4rem 3.5rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.35s;
+        }
+
+        .btn-black {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .btn-black:hover {
+            background: var(--gold-dark);
+            color: var(--white);
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+        }
+
+        .btn-gold:hover {
+            background: var(--gold-dark);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--black);
+            box-shadow: inset 0 0 0 1.5px var(--black);
+        }
+
+        .btn-outline:hover {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: var(--white);
+            box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.4);
+        }
+
+        .btn-outline-white:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        /* ─── Section: Reality ─── */
+        .reality {
+            background: var(--gray-100);
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+        }
+
+        .reality > .container { width: 100%; }
+
+        .reality-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .reality-text {
+            padding-top: 0;
+        }
+
+        .reality h2 {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+
+        .reality-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .reality-text p {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .reality-text .highlight {
+            color: var(--black);
+            font-weight: 700;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            margin-top: 0.5rem;
+        }
+
+        /* ─── Section: Approach ─── */
+        .approach {
+            background: var(--white);
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+        }
+
+        .approach > .container { width: 100%; }
+
+        .approach-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .approach h2 {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+
+        .approach-body {
+            max-width: 100%;
+            padding-top: 0;
+        }
+
+        .approach-body p {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .approach-body strong {
+            color: var(--black);
+            font-weight: 700;
+        }
+
+        .approach-aside {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.02em;
+            margin-top: 2.5rem;
+            font-style: italic;
+        }
+
+        /* ─── Section: Framework ─── */
+        .framework {
+            background: var(--black);
+            color: var(--white);
+            padding: 0;
+            position: relative;
+        }
+
+        .framework-bg {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 5rem;
+            z-index: 1;
+            transition: filter 0.6s ease;
+        }
+
+        .framework-bg.blurred {
+            filter: blur(12px);
+            opacity: 0.4;
+        }
+
+        .framework-bg .section-label { margin-bottom: 2rem; }
+
+        .framework-bg h2 { margin-bottom: 2.5rem; }
+
+        .framework-bg .intro {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: rgba(255,255,255,0.5);
+            line-height: 1.6;
+            font-weight: 400;
+            max-width: fit-content;
+        }
+
+        .framework-cards-stack {
+            position: relative;
+            z-index: 2;
+            margin-top: -100vh;
+            padding-top: 200vh;
+        }
+
+        .framework-card-wrap {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .framework-card-wrap.card-1 { z-index: 10; }
+        .framework-card-wrap.card-2 { z-index: 11; }
+        .framework-card-wrap.card-3 { z-index: 12; }
+
+        .framework-card {
+            width: 640px;
+            max-width: 90vw;
+            background: var(--white);
+            color: var(--black);
+            padding: 4rem 4.5rem;
+            box-shadow: 0 30px 100px rgba(0,0,0,0.6);
+            transition: filter 0.5s ease, opacity 0.5s ease;
+            position: relative;
+        }
+
+        .framework-card.blurred-card {
+            filter: blur(6px);
+            opacity: 0.7;
+        }
+
+        .card-1 .framework-card { transform: rotate(-1.5deg); }
+        .card-2 .framework-card { transform: rotate(1deg); }
+        .card-3 .framework-card { transform: rotate(-0.5deg); }
+
+        .framework-spacer { height: 80vh; }
+
+        .framework-card .number {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--gray-200);
+            letter-spacing: -0.03em;
+            line-height: 1;
+            position: absolute;
+            bottom: 2rem;
+            right: 2.5rem;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .framework-card h3 {
+            font-weight: 800;
+            font-size: 2.2rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: var(--black);
+        }
+
+        .framework-card .author {
+            font-size: 1.1rem;
+            color: var(--gold-dark);
+            margin-bottom: 0.15rem;
+        }
+
+        .framework-card .institution {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--gray-400);
+            margin-bottom: 2rem;
+        }
+
+        .framework-card .desc {
+            font-size: 1.25rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .framework-card .usage {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--gold-dark);
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+
+        /* ─── Section: Mastermind ─── */
+        .mastermind {
+            background: var(--gold);
+            padding: 0;
+            position: relative;
+            z-index: 101;
+        }
+
+        .mastermind-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 5rem 5rem 3rem;
+        }
+
+        .mastermind-hero .section-label {
+            color: var(--black);
+            border-color: var(--black);
+            opacity: 0.5;
+            margin-bottom: 2rem;
+        }
+
+        .mastermind-hero h2 {
+            margin-bottom: 2.5rem;
+            color: var(--black);
+        }
+
+        .mastermind-hero .lead {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: rgba(0,0,0,0.6);
+            line-height: 1.6;
+            font-weight: 400;
+            max-width: fit-content;
+        }
+
+        /* What happens: sticky footer with columns */
+        .mastermind-scroll {
+            height: 400vh;
+            position: relative;
+        }
+
+        .mastermind-weeks {
+            position: sticky;
+            bottom: 0;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 5rem 4rem;
+            background: var(--gold);
+        }
+
+        .mastermind-hero {
+            flex: 1;
+        }
+
+
+        .week-columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            border-top: 2px solid var(--black);
+        }
+
+        .week-col {
+            padding: 3rem 3rem 3rem 0;
+            border-right: 1px solid rgba(0,0,0,0.15);
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s cubic-bezier(0.23,1,0.32,1), transform 0.7s cubic-bezier(0.23,1,0.32,1);
+        }
+
+        .week-col:not(:first-child) { padding-left: 3rem; }
+        .week-col:last-child { border-right: none; }
+
+        .week-col.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .week-col h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--black);
+            margin-bottom: 1.5rem;
+        }
+
+        .week-col p {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: rgba(0,0,0,0.6);
+            line-height: 1.6;
+        }
+
+        /* After weeks: details section */
+        .mastermind-details {
+            background: var(--gray-100);
+            padding: 10rem 5rem;
+        }
+
+        .mastermind-details-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .mastermind-block {
+            margin-bottom: 5rem;
+        }
+
+        .mastermind-label {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: inline-block;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 0.4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+        }
+
+        .benefits-list li {
+            padding: 1.1rem 0;
+            border-bottom: 1px solid var(--gray-200);
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-600);
+            justify-content: center;
+        }
+
+        .who-block { margin-bottom: 4rem; }
+
+        .who-block h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: inline-block;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .who-block p {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .who-block .bold-line {
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .investment-block {
+            margin-top: 6rem;
+            padding-top: 4rem;
+            border-top: 2px solid var(--black);
+        }
+
+        .investment-block .price {
+            font-weight: 900;
+            font-size: clamp(4rem, 8vw, 7rem);
+            letter-spacing: -0.04em;
+            color: var(--black);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .investment-block .price-sub {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-400);
+            margin-bottom: 3rem;
+        }
+
+        /* ─── Assessment ─── */
+        .assessment {
+            background: var(--gold);
+            color: var(--black);
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+        }
+
+        .assessment > .container { width: 100%; }
+
+        .assessment-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .assessment .section-label {
+            color: var(--black);
+            border-color: var(--black);
+            opacity: 0.5;
+        }
+
+        .assessment h2 { margin-bottom: 0; }
+
+        .assessment .intro {
+            margin-bottom: 2rem;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            line-height: 1.6;
+            color: rgba(0,0,0,0.6);
+        }
+
+        .assessment-list {
+            list-style: disc;
+            margin-bottom: 2rem;
+            padding-left: 1.2em;
+        }
+
+        .assessment-list li {
+            padding: 0.4rem 0;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: rgba(0,0,0,0.6);
+            line-height: 1.6;
+        }
+
+        .assessment .no-catch {
+            font-weight: 700;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--black);
+            margin-bottom: 2.5rem;
+        }
+
+        /* ─── Quiz Modal ─── */
+        .quiz-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            display: none;
+        }
+
+        .quiz-modal.open { display: flex; align-items: center; justify-content: center; }
+
+        .quiz-modal-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(6px);
+        }
+
+        .quiz-modal-content {
+            position: relative;
+            background: var(--gold);
+            width: 60vw;
+            height: 75vh;
+            overflow-y: auto;
+            padding: 3.5rem 3.5rem 3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quiz-modal-inner {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 2rem;
+        }
+
+        .quiz-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: rgba(0,0,0,0.3);
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.3s;
+        }
+
+        .quiz-close:hover { color: var(--black); }
+
+        .quiz-modal-footer {
+            text-align: center;
+            padding-top: 1.5rem;
+            margin-top: auto;
+            border-top: 3px solid rgba(0,0,0,0.12);
+        }
+
+        .quiz-modal-footer img {
+            height: 90px;
+            width: auto;
+            opacity: 0.3;
+            filter: brightness(0.3);
+            margin-top: 1.5rem;
+        }
+
+        .quiz-progress {
+            margin-bottom: 3rem;
+        }
+
+        .quiz-progress-bar {
+            height: 3px;
+            background: rgba(0,0,0,0.12);
+            width: 100%;
+            margin-bottom: 0.75rem;
+        }
+
+        .quiz-progress-fill {
+            height: 100%;
+            background: var(--black);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+
+        .quiz-progress-text {
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.4);
+        }
+
+        .quiz-question {
+            display: none;
+        }
+
+        .quiz-question.active { display: block; }
+
+        .quiz-category,
+        #quizQuestions .quiz-category {
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.35);
+            margin-bottom: 1.25rem;
+        }
+
+        .quiz-question h3,
+        #quizQuestions h3 {
+            font-weight: 800;
+            font-size: clamp(1.8rem, 4vw, 3.2rem) !important;
+            letter-spacing: -0.02em;
+            color: var(--black);
+            line-height: 1.2;
+            margin-bottom: 7rem !important;
+        }
+
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            flex: 1;
+        }
+
+        .quiz-option {
+            background: rgba(255,255,255,0.5);
+            border: 1.5px solid transparent;
+            padding: 1.3rem 1.75rem;
+            font-family: var(--sans);
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: var(--black);
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.25s;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .quiz-option:hover {
+            background: rgba(255,255,255,0.8);
+            border-color: var(--black);
+        }
+
+        .quiz-option.selected {
+            background: var(--black);
+            color: var(--white);
+            border-color: var(--black);
+        }
+
+        .quiz-option .opt-num,
+        #quizOptions .quiz-option .opt-num {
+            font-size: 1.4rem !important;
+            font-weight: 900 !important;
+            color: rgba(0,0,0,0.2) !important;
+            opacity: 1;
+            min-width: 1.4em;
+        }
+
+        .quiz-option.selected .opt-num { opacity: 0.6; }
+
+        .quiz-nav {
+            margin-top: 3rem;
+        }
+
+        .quiz-nav-back {
+            background: none;
+            border: none;
+            font-family: var(--sans);
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgba(0,0,0,0.4);
+            cursor: pointer;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+
+        .quiz-nav-back:hover { color: var(--black); }
+
+        /* Final step */
+        .quiz-final h3 {
+            font-weight: 800;
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            letter-spacing: -0.02em;
+            color: var(--black);
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .quiz-final p {
+            font-size: 1.1rem;
+            color: rgba(0,0,0,0.6);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .quiz-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quiz-field label {
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.4);
+        }
+
+        .quiz-field input {
+            font-family: var(--sans);
+            font-size: 1.1rem;
+            padding: 1rem 1.25rem;
+            border: 1.5px solid rgba(0,0,0,0.15);
+            background: rgba(255,255,255,0.6);
+            color: var(--black);
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .quiz-field input:focus {
+            border-color: var(--black);
+            background: var(--white);
+        }
+
+        .quiz-field input::placeholder { color: rgba(0,0,0,0.25); }
+
+        .quiz-submit {
+            margin-top: 2rem;
+        }
+
+        .quiz-field select {
+            font-family: var(--sans);
+            font-size: 1.1rem;
+            padding: 1rem 1.25rem;
+            border: 1.5px solid rgba(0,0,0,0.15);
+            background: rgba(255,255,255,0.6);
+            color: var(--black);
+            outline: none;
+            transition: border-color 0.3s;
+            width: 100%;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23999' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.25rem center;
+            cursor: pointer;
+        }
+
+        .quiz-field select:focus {
+            border-color: var(--black);
+            background-color: var(--white);
+        }
+
+        /* ─── 1:1 Coaching ─── */
+        .coaching {
+            background: var(--gray-100);
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            padding: 5rem 0;
+        }
+
+        .coaching > .container { width: 100%; }
+
+        .coaching-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .coaching h2 { margin-bottom: 0; max-width: 100%; }
+
+        .coaching .body-text { margin-bottom: 1.25rem; max-width: 100%; }
+
+        .coaching .btn { margin-top: 2rem; }
+
+        /* ─── Coach ─── */
+        .coaches {
+            background: var(--white);
+            min-height: auto;
+            padding: 30px 0 0;
+            overflow: hidden;
+        }
+
+        .coaches > .container { width: 100%; }
+
+        .coaches h2 { margin-bottom: 0; }
+
+        .coach-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: stretch;
+        }
+
+        .coach-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .coach-info h3 {
+            font-weight: 800;
+            font-size: 1.8rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.3rem;
+        }
+
+        .coach-info .title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--gold);
+            letter-spacing: 0.02em;
+            margin-bottom: 2rem;
+        }
+
+        .coach-info p {
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
+            color: var(--gray-600);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .coach-info .quote {
+            font-style: italic;
+            font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+            color: var(--black);
+            margin-top: 2rem;
+            padding-left: 1.25rem;
+            border-left: 2px solid var(--gold);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .coach-socials {
+            display: flex;
+            gap: 1.25rem;
+            margin-top: 2rem;
+            align-items: center;
+        }
+
+        .coach-socials a {
+            color: var(--gold);
+            transition: color 0.3s;
+        }
+
+        .coach-socials a:hover {
+            color: var(--gold-dark);
+        }
+
+        .coach-socials svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .coach-photo {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            align-self: stretch;
+        }
+
+        .coach-photo img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: bottom;
+        }
+
+        /* ─── FAQ ─── */
+        .faq {
+            background: var(--gray-100);
+            text-align: center;
+        }
+
+        .faq h2 { margin-bottom: 4rem; }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-item { border-bottom: 1px solid var(--gray-200); }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 1.75rem 3rem 1.75rem 0;
+            font-family: var(--sans);
+            font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+            font-weight: 700;
+            color: var(--black);
+            cursor: pointer;
+            position: relative;
+            line-height: 1.5;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover { color: var(--gold); }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--gold);
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after { content: '\2212'; }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer-inner {
+            padding-bottom: 1.75rem;
+            color: var(--gray-600);
+            font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+            line-height: 1.7;
+            max-width: 800px;
+        }
+
+        /* ─── Footer ─── */
+        .footer-cta {
+            background: var(--black);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .footer-cta h2 {
+            color: var(--white);
+            margin-bottom: 3rem;
+        }
+
+        .footer-cta-buttons {
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background: var(--black);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+
+        .footer-brand {
+            display: block;
+        }
+
+        .footer-brand img {
+            height: 160px;
+            display: block;
+            width: auto;
+            filter: brightness(0) invert(1);
+            opacity: 0.5;
+            transition: opacity 0.3s;
+        }
+
+        .footer-brand:hover img { opacity: 0.7; }
+
+        .footer-brand:hover img { opacity: 0.7; }
+
+        .footer-contact a {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.4);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-contact a:hover { color: var(--gold); }
+
+        .footer-legal {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.2);
+        }
+
+        .footer-legal a {
+            color: rgba(255,255,255,0.2);
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover { color: rgba(255,255,255,0.4); }
+
+        /* ─── Reveal Animations ─── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.9s cubic-bezier(0.23, 1, 0.32, 1),
+                        transform 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        /* ─── Mobile Menu ─── */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: var(--white);
+            z-index: 99;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .mobile-menu.open { opacity: 1; pointer-events: all; }
+
+        .mobile-menu a {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--black);
+            text-decoration: none;
+            letter-spacing: -0.01em;
+            transition: color 0.3s;
+        }
+
+        .mobile-menu a:hover { color: var(--gold); }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 1024px) {
+            .framework-cards { grid-template-columns: 1fr; gap: 1px; }
+            .week-columns { grid-template-columns: 1fr; }
+            .week-col:not(:first-child) { padding-left: 0; }
+            .week-col { border-right: none; border-bottom: 1px solid var(--gray-200); }
+            .two-col-section { grid-template-columns: 1fr; gap: 4rem; }
+            .coach-layout { grid-template-columns: 1fr; }
+            .reality-layout { grid-template-columns: 1fr; }
+            .approach-layout { grid-template-columns: 1fr; }
+            .assessment-layout { grid-template-columns: 1fr; }
+            .coaching-layout { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 6rem 0; }
+            .container, .container-narrow { padding: 0 1.5rem; }
+            .nav-bar { padding: 0.8rem 1.5rem; }
+            .nav-logo { left: 1.5rem; padding: 1rem; }
+            .nav-logo img { height: 120px; }
+            .nav-links { display: none; }
+            .nav-toggle { display: flex; }
+            .mobile-menu { display: flex; }
+            .hero { min-height: 85vh; padding: 7rem 0 4rem; }
+            .hero-content { padding: 0 1.5rem; }
+            .hero h1 { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+            .big-heading { font-size: clamp(2rem, 8vw, 3.5rem); }
+            .medium-heading { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+            .footer-cta { padding: 6rem 0; }
+            .footer-cta-buttons { flex-direction: column; align-items: center; }
+            .footer-inner { flex-direction: column; text-align: center; gap: 1rem; }
+            .investment-bar { flex-direction: column; text-align: center; padding: 2.5rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ─── Nav ─── -->
+<a href="#" class="nav-logo" id="navLogo">
+    <img src="logo.png" alt="Highgate Society">
+</a>
+<nav id="nav">
+    <div class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#framework">Framework</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#coaching">Coaching</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#assessment" class="nav-cta">Free Assessment</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#approach" onclick="closeMobile()">Approach</a>
+    <a href="#framework" onclick="closeMobile()">Framework</a>
+    <a href="#programme" onclick="closeMobile()">Programme</a>
+    <a href="#coaching" onclick="closeMobile()">Coaching</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
+    <a href="#assessment" class="btn btn-black" onclick="closeMobile()">Free Assessment</a>
+</div>
+
+<!-- ─── 1. Hero ─── -->
+<section class="hero">
+    <script src="symbol_points.js"></script>
+    <canvas id="particleCanvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;"></canvas>
+    <div class="hero-content" style="position:relative;z-index:2;">
+        <div class="hero-text-block">
+            <h1>Clarity doesn't come from thinking harder.<br><em>It comes from thinking with the right people.</em></h1>
+            <p class="hero-sub">Highgate Society provides structured coaching and mastermind programmes for senior professionals navigating complex transitions — in their careers, their businesses, and the way they lead.</p>
+        </div>
+        <div class="hero-cta-row">
+            <a href="#assessment" class="btn btn-black">Take the Free Assessment &rarr;</a>
+            <span class="hero-small">15 minutes. Personalised report. Peer-reviewed psychology.</span>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 2. The Reality ─── -->
+<section class="reality">
+    <div class="container">
+        <p class="section-label reveal">The Reality</p>
+        <div class="reality-layout">
+            <div class="reveal">
+                <h2 class="big-heading">Every generation faces a disruption that rewrites the rules. Industrialisation. The internet. This is yours.</h2>
+            </div>
+            <div class="reality-text reveal reveal-delay-1">
+                <p>The pattern is always the same: a technology emerges that changes what work means, who gets rewarded, and how value is created. The professionals who thrive aren't the ones who predict the future — they're the ones who understand themselves clearly enough to adapt.</p>
+                <p>Right now, that disruption is AI. Parts of your work — analysis, writing, research, first drafts — are already done faster and cheaper by machines. That's not a forecast. It's a fact.</p>
+                <p>The question isn't whether change affects you. It always does. The question is: what do you do with the parts that are still yours? What becomes more valuable now? What do you let go of?</p>
+                <p class="highlight">Most professionals are stuck between two bad responses: ignoring the shift entirely, or chasing every new tool without a strategy. There's a third option.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 3. Approach ─── -->
+<section class="approach" id="approach">
+    <div class="container">
+        <p class="section-label reveal">Our Approach</p>
+        <div class="approach-layout">
+            <div class="reveal">
+                <h2 class="big-heading">We don't teach you how to use AI. We help you decide what to do about it.</h2>
+            </div>
+            <div class="approach-body reveal reveal-delay-1">
+            <p>This isn't a course on tools. It's not a technology workshop.</p>
+            <p>It's a structured process for thinking clearly about what changes — and what doesn't — when machines can do the repeatable parts of your work. Your strategy, your leadership, your positioning, your next move.</p>
+            <p><strong>The disruption is technological. The response is personal.</strong> It depends on your strengths, your values, the business you're building, and the way you lead.</p>
+            <p class="approach-aside">We start there.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 4. Framework ─── -->
+<section class="framework" id="framework">
+    <div class="framework-bg">
+        <p class="section-label">The Framework</p>
+        <h2 class="big-heading" style="color: var(--white);">Built on 50 years of research.<br>Applied to today's disruption.</h2>
+        <p class="intro">Our methodology integrates three of the most validated frameworks<br>in career science and change management, developed at MIT, Ohio State, and across 13 countries.</p>
+    </div>
+
+    <div class="framework-cards-stack">
+        <div class="framework-card-wrap card-1">
+            <div class="framework-card">
+                <p class="number">01</p>
+                <h3>Career Adapt-Abilities</h3>
+                <p class="author">Mark L. Savickas</p>
+                <p class="institution">Ohio State &middot; Northeastern Ohio Universities</p>
+                <p class="desc">Four psychological resources that determine how well someone navigates disruption: Concern, Control, Curiosity, Confidence. Validated across 13 countries. Over 1,000 peer-reviewed studies.</p>
+                <p class="usage">How we use it: we measure your adaptability profile — where you're strong and where you're stuck.</p>
+            </div>
+        </div>
+        <div class="framework-spacer"></div>
+        <div class="framework-card-wrap card-2">
+            <div class="framework-card">
+                <p class="number">02</p>
+                <h3>The Transition Model</h3>
+                <p class="author">William Bridges</p>
+                <p class="institution">Author of Managing Transitions (1991)</p>
+                <p class="desc">Change is external — it happens to you. Transition is internal — it's how you process it. Three phases: Ending, Neutral Zone, New Beginning. Most people try to skip the middle. The middle is where the real thinking happens.</p>
+                <p class="usage">How we use it: we identify where you are psychologically — not just practically.</p>
+            </div>
+        </div>
+        <div class="framework-spacer"></div>
+        <div class="framework-card-wrap card-3">
+            <div class="framework-card">
+                <p class="number">03</p>
+                <h3>Career Anchors</h3>
+                <p class="author">Edgar H. Schein</p>
+                <p class="institution">MIT Sloan School of Management</p>
+                <p class="desc">Eight career motivators that stay stable across a lifetime. Your anchor is what you won't sacrifice — autonomy, expertise, impact, security, the drive to build.</p>
+                <p class="usage">How we use it: we understand what drives you — so the path forward is yours, not a template.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ─── 5. Mastermind ─── -->
+<section class="mastermind" id="programme">
+    <div class="mastermind-scroll" id="mastermindScroll">
+        <div class="mastermind-weeks">
+            <div class="mastermind-hero">
+                <p class="section-label">The Programme</p>
+                <h2 class="big-heading">The Highgate Society Mastermind</h2>
+                <p class="lead">5–7 professionals. Different industries. Similar seniority.<br>One shared reality: AI is changing the game, and none of you should be figuring it out alone.<br>Six weeks. Weekly sessions. Facilitated by ICF-certified coaches.</p>
+                <a href="#assessment" class="btn btn-black" style="margin-top:4rem;">Apply for the Next Cohort &rarr;</a>
+            </div>
+            <div class="week-columns">
+                <div class="week-col">
+                    <h4>Week 1 — Where you stand</h4>
+                    <p>Your adaptability profile. Your relationship with AI right now — what you're using, what you're avoiding, what you haven't thought about yet. The group meets, the ground rules are set.</p>
+                </div>
+                <div class="week-col">
+                    <h4>Weeks 2–4 — The hard questions</h4>
+                    <p>Each week, one or two members bring a real situation to the group. Not abstract strategy — the actual decisions you're facing. The group works through it with you — different industries, different blind spots, better answers.</p>
+                </div>
+                <div class="week-col">
+                    <h4>Weeks 5–6 — Action &amp; accountability</h4>
+                    <p>You've done the thinking. Now you execute. Shorter sessions. What did you do? What happened? Where are you stuck? The group holds you to it.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mastermind-details">
+        <div class="mastermind-details-inner">
+            <div class="mastermind-block reveal">
+                <p class="mastermind-label">What you get</p>
+                <ul class="benefits-list">
+                    <li>Weekly 90-minute facilitated sessions on Zoom</li>
+                    <li>Your personalised AI Career Disruption Readiness Report</li>
+                    <li>A curated peer group of founders, executives, and senior professionals</li>
+                    <li>Structured accountability for six weeks</li>
+                    <li>Access to your facilitating coach between sessions</li>
+                </ul>
+            </div>
+
+            <div class="mastermind-block reveal">
+                <div class="who-block">
+                    <h3>Who it's for</h3>
+                    <p>Founders rethinking their business model. Executives restructuring teams. Senior professionals whose expertise is being commoditised by AI. Leaders who know they need to act but want to think first — with people who are sharp enough to challenge them.</p>
+                    <p>You don't need to be technical. You don't need to be in crisis. You need to be willing to think honestly about what's changing.</p>
+                </div>
+            </div>
+
+
+            <div class="investment-block reveal">
+                <p class="price">&euro;750</p>
+                <p class="price-sub">Full six-week programme. Includes 15-minute screening conversation.</p>
+                <a href="#assessment" class="btn btn-black">Apply for the Next Cohort &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 6. Assessment ─── -->
+<section class="assessment" id="assessment">
+    <div class="container">
+        <p class="section-label reveal">Free Diagnostic</p>
+        <div class="assessment-layout">
+            <div class="reveal">
+                <h2 class="big-heading">Find out where you stand.<br>In 15 minutes.</h2>
+            </div>
+            <div class="reveal reveal-delay-1">
+                <p class="intro">The Highgate Society Readiness Assessment is a 24-question diagnostic built on the same frameworks we use with our coaching clients. You answer honestly. We give you a personalised report:</p>
+                <ul class="assessment-list">
+                    <li>Your adaptability profile across four dimensions</li>
+                    <li>Where you are in the transition — psychologically, not just practically</li>
+                    <li>What drives your career decisions — and where that creates blind spots</li>
+                    <li>Your AI exposure vs. your adaptive capacity</li>
+                    <li>Three things you can do this week</li>
+                </ul>
+                <a href="#" class="btn btn-black" id="startQuiz">Take the Assessment &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Quiz Modal ─── -->
+<div class="quiz-modal" id="quizModal">
+    <div class="quiz-modal-overlay" id="quizOverlay"></div>
+    <div class="quiz-modal-content">
+        <button class="quiz-close" id="quizClose">&times;</button>
+        <div class="quiz-modal-inner" id="quizInline">
+            <div class="quiz-progress">
+                <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quizFill"></div></div>
+                <p class="quiz-progress-text"><span id="quizCurrent">1</span> / <span id="quizTotal">24</span></p>
+            </div>
+            <div id="quizQuestions"></div>
+            <div class="quiz-options" id="quizOptions"></div>
+            <div class="quiz-text-input" id="quizTextInput" style="display:none;">
+                <textarea id="quizTextarea" rows="4" placeholder="Take your time — even a few sentences help us understand your situation." style="font-family:var(--sans);font-size:1.2rem;width:100%;padding:1.4rem;border:1.5px solid rgba(0,0,0,0.15);background:rgba(255,255,255,0.5);color:var(--black);outline:none;resize:vertical;line-height:1.6;"></textarea>
+            </div>
+            <div class="quiz-nav">
+                <button class="quiz-nav-back" id="quizBack">&larr; Back</button>
+            </div>
+        </div>
+        <div class="quiz-modal-footer">
+            <img src="logo-footer.png" alt="Highgate Society">
+        </div>
+    </div>
+</div>
+
+<!-- ─── 7. Coaching ─── -->
+<section class="coaching" id="coaching">
+    <div class="container">
+        <p class="section-label reveal">Individual Coaching</p>
+        <div class="coaching-layout">
+            <div class="reveal">
+                <h2 class="big-heading">When you need the room to yourself.</h2>
+            </div>
+            <div class="reveal reveal-delay-1">
+                <p class="body-text">Some situations need private space. A founder working through a pivot. An executive navigating a restructuring. A senior leader rethinking their entire function.</p>
+                <p class="body-text">Our 1:1 engagements use the same frameworks as the Mastermind — adapted to your specific situation, pace, and stakes.</p>
+                <a href="#assessment" class="btn btn-black">Book a Conversation &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 8. Coach ─── -->
+<section class="coaches" id="coaches">
+    <div class="container">
+        <p class="section-label reveal">Your Coach</p>
+        <div class="coach-layout">
+            <div class="coach-info reveal">
+                <h2 class="big-heading">The person behind the practice.</h2>
+                <h3 style="margin-top:2.5rem;">Olga Viorel</h3>
+                <p class="title">ICF-Certified Business &amp; Team Coach</p>
+                <p>20+ years in international FMCG across leadership, team development, and organisational change. Olga has coached executives through restructurings, market entries, digital transformations, and the kind of decisions that don't come with a playbook.</p>
+                <p>She brings what most coaches can't: the strategic clarity of someone who's been in the room when the decisions were made, and the depth of someone trained to hear what isn't being said.</p>
+                <p class="quote">"People don't resist change. They resist being changed without understanding why."</p>
+                <div class="coach-socials">
+                    <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" aria-label="Telegram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0h-.056zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 0C5.393 0 0 5.382 0 12.004c0 2.11.553 4.162 1.604 5.98L0 24l6.166-1.617A11.96 11.96 0 0012.031 24C18.669 24 24 18.627 24 12.004S18.669 0 12.031 0z" fill="currentColor"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="white"/></svg></a>
+                </div>
+            </div>
+            <div class="coach-photo reveal reveal-delay-1">
+                <img src="olga.png" alt="Olga Viorel — ICF-Certified Business &amp; Team Coach">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 9. FAQ ─── -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="reveal">
+            <p class="section-label">Questions</p>
+            <h2 class="medium-heading">What you'd want to know before applying.</h2>
+        </div>
+        <div class="faq-list reveal">
+            <div class="faq-item">
+                <button class="faq-question">What actually happens in a Mastermind session?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">One or two members bring a real, current challenge — not a case study, their actual situation. The group and facilitator work through it: perspectives, hard questions, blind spots, options. It's structured, timed, and facilitated. Not a panel discussion. Not a networking event.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do I need to be technical or know about AI?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">No. This isn't a technology programme. We work with the human and strategic side — how AI affects your role, your team, your business model, your decisions. Some members are deeply technical. Others have never opened ChatGPT. Both benefit equally.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">I run a company. Is this relevant for founders?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Yes. Founders face AI disruption differently than employees — it affects product, team structure, competitive positioning, and what you personally should be doing vs. delegating. The Mastermind gives you a space to think about that with people outside your investor circle and your team.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How are group members selected?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">Online assessment, LinkedIn review, and a 15-minute screening conversation. We select for seniority fit, industry diversity, and willingness to be honest. If we don't think it's a fit, we say so.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What if I miss a session?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">One missed session is manageable — you'll get a debrief. Two or more significantly reduces the value for you and the group. We ask for real commitment.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is this therapy?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">No. It's professional coaching in a peer group format. We work with high-functioning professionals navigating a specific external challenge. If we believe someone needs clinical support, we'll say so directly.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What does it cost?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">&euro;750 for the full six-week programme. Payment before the first session.</div></div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What language are sessions in?</button>
+                <div class="faq-answer"><div class="faq-answer-inner">English. Members join from across Europe and beyond.</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ─── 10. Footer CTA ─── -->
+<section class="footer-cta">
+    <div class="container">
+        <div class="reveal">
+            <h2 class="big-heading" style="color: var(--white);">The next cohort is forming now.</h2>
+            <div class="footer-cta-buttons">
+                <a href="#assessment" class="btn btn-gold">Apply for the Mastermind &rarr;</a>
+                <a href="#assessment" class="btn btn-outline-white">Take the Free Assessment &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <a href="#" class="footer-brand">
+                <img src="logo.png" alt="Highgate Society">
+            </a>
+            <div class="footer-contact"><a href="mailto:hello@highgatesociety.com">hello@highgatesociety.com</a></div>
+            <div class="footer-legal"><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="cookies.html">Cookies</a> &middot; <a href="imprint.html">Legal Notice</a></div>
+        </div>
+    </div>
+</footer>
+
+<script type="module">
+    import { prepareWithSegments, layoutWithLines } from 'https://esm.sh/@chenglou/pretext';
+
+    function matchSubToHeadline() {
+        const h1 = document.querySelector('.hero h1');
+        const sub = document.querySelector('.hero-sub');
+        if (!h1 || !sub) return;
+
+        const style = getComputedStyle(h1);
+        const font = `${style.fontWeight} ${style.fontSize} ${style.fontFamily}`;
+        const containerWidth = h1.offsetWidth;
+        const lineHeight = parseFloat(style.lineHeight) || parseFloat(style.fontSize) * 0.95;
+
+        // Measure each h1 line (split by <br>) within the container, find widest text line
+        const textLines = h1.innerText.split('\n');
+        let maxLineWidth = 0;
+
+        for (const text of textLines) {
+            const prepared = prepareWithSegments(text.trim(), font);
+            const { lines } = layoutWithLines(prepared, containerWidth, lineHeight);
+            for (const line of lines) {
+                if (line.width > maxLineWidth) maxLineWidth = line.width;
+            }
+        }
+
+        sub.style.maxWidth = Math.ceil(maxLineWidth) + 'px';
+        sub.style.marginLeft = 'auto';
+        sub.style.marginRight = 'auto';
+    }
+
+    // Run after fonts are loaded for accurate measurement
+    document.fonts.ready.then(matchSubToHeadline);
+    window.addEventListener('resize', matchSubToHeadline);
+</script>
+
+<script>
+    // Nav scroll + hide on mastermind and footer
+    const nav = document.getElementById('nav');
+    const navLogo = document.getElementById('navLogo');
+    const mastermindSection = document.querySelector('.mastermind');
+    const footerCta = document.querySelector('.footer-cta');
+    window.addEventListener('scroll', () => {
+        const mmVisible = mastermindSection && (() => { const r = mastermindSection.getBoundingClientRect(); return r.top <= 0 && r.bottom > 0; })();
+        const ftVisible = footerCta && (() => { const r = footerCta.getBoundingClientRect(); return r.top <= 0 && r.bottom > 0; })();
+        const hide = mmVisible || ftVisible;
+        nav.classList.toggle('nav-hidden', hide);
+        navLogo.style.transform = hide ? 'translateY(-100%)' : '';
+        navLogo.style.opacity = hide ? '0' : '';
+    });
+
+    // Mobile menu
+    const toggle = document.getElementById('navToggle');
+    const mobile = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => {
+        mobile.classList.toggle('open');
+        document.body.style.overflow = mobile.classList.contains('open') ? 'hidden' : '';
+    });
+    function closeMobile() {
+        mobile.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // FAQ
+    document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.parentElement;
+            const answer = item.querySelector('.faq-answer');
+            const open = item.classList.contains('active');
+            document.querySelectorAll('.faq-item.active').forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-answer').style.maxHeight = '0';
+            });
+            if (!open) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Framework blur: bg + previous cards via scroll progress
+    const fwBg = document.querySelector('.framework-bg');
+    const fwWraps = Array.from(document.querySelectorAll('.framework-card-wrap'));
+    const fwStack = document.querySelector('.framework-cards-stack');
+    if (fwBg && fwWraps.length && fwStack) {
+        // Calculate where each card starts within the stack
+        window.addEventListener('scroll', () => {
+            const stackRect = fwStack.getBoundingClientRect();
+            const stackHeight = fwStack.offsetHeight;
+            const scrolled = -stackRect.top;
+            const paddingTop = window.innerHeight * 2; // 200vh padding
+
+            // Blur background only after scrolling past the padding (empty space)
+            fwBg.classList.toggle('blurred', scrolled > paddingTop - window.innerHeight * 0.3);
+
+            // Figure out which card is on top based on scroll position
+            // Cards start after paddingTop, each card-wrap is 100vh, spacers are 80vh
+            const cardStart = paddingTop;
+            const cardStep = window.innerHeight * 1.8; // 100vh wrap + 80vh spacer
+            const activeCard = Math.floor((scrolled - cardStart + window.innerHeight * 0.5) / cardStep);
+
+            fwWraps.forEach((wrap, i) => {
+                wrap.querySelector('.framework-card').classList.toggle('blurred-card', activeCard > i);
+            });
+        }, { passive: true });
+    }
+
+    // Week columns: reveal one by one based on scroll progress
+    const mmScroll = document.getElementById('mastermindScroll');
+    const weekCols = Array.from(document.querySelectorAll('.week-col'));
+    if (mmScroll && weekCols.length) {
+        window.addEventListener('scroll', () => {
+            const rect = mmScroll.getBoundingClientRect();
+            const scrollable = mmScroll.offsetHeight - window.innerHeight;
+            const scrolled = -rect.top;
+            const progress = Math.max(0, Math.min(1, scrolled / scrollable));
+
+            // 3 columns appear at 15%, 40%, 65% progress
+            const thresholds = [0.15, 0.4, 0.65];
+            weekCols.forEach((col, i) => {
+                col.classList.toggle('visible', progress >= thresholds[i]);
+            });
+        }, { passive: true });
+    }
+
+    // ─── Quiz ───
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxOE-3xQcsvXgcZoiW6KrN4pi-X8yj4E8uGxir_JvOhdiRJDjorSqdN9vcYs1Ju4X8y/exec';
+    const QUESTIONS = [
+      {cat:'Adaptability — Concern', q:'When you think about your career 2 years from now, which is closest to how you feel?', opts:[
+        {t:'I have a clear plan and I\'m working toward it', v:'5'},{t:'General direction, but details are fuzzy', v:'4'},{t:'I think about it sometimes, no concrete plans', v:'3'},{t:'I try not to think about it — too much uncertainty', v:'2'},{t:'I genuinely don\'t know what it will look like', v:'1'}]},
+      {cat:'Adaptability — Concern', q:'In the past 3 months, how much time have you spent actively preparing for potential changes in your industry?', opts:[
+        {t:'Significant — courses, events, new skills', v:'5'},{t:'Some — articles and conversations', v:'4'},{t:'Minimal — I know I should but haven\'t', v:'2'},{t:'None — I don\'t see an immediate need', v:'1'}]},
+      {cat:'Adaptability — Control', q:'When a major change happens at work — restructuring, new technology, leadership change — your first instinct is to:', opts:[
+        {t:'Assess the situation and position myself', v:'5'},{t:'Talk to colleagues to understand what\'s happening', v:'4'},{t:'Wait for clear instructions', v:'2'},{t:'Hope it won\'t affect me directly', v:'1'}]},
+      {cat:'Adaptability — Control', q:'How confident are you in your ability to make the right career decisions for yourself right now?', opts:[
+        {t:'Not at all — I feel paralysed', v:'1'},{t:'Slightly — I second-guess most decisions', v:'2'},{t:'Moderately — I can decide but with doubt', v:'3'},{t:'Quite confident — I trust my judgment', v:'4'},{t:'Very confident — I know what I want', v:'5'}]},
+      {cat:'Adaptability — Curiosity', q:'How often do you explore career paths or roles outside your current field?', opts:[
+        {t:'Regularly — I actively research alternatives', v:'5'},{t:'Occasionally — when something catches my eye', v:'4'},{t:'Rarely — I\'m focused on what I know', v:'2'},{t:'Never — I don\'t see the point', v:'1'}]},
+      {cat:'Adaptability — Confidence', q:'When you face a professional challenge you\'ve never encountered before, you typically:', opts:[
+        {t:'Feel energised — I enjoy figuring out new things', v:'5'},{t:'Feel cautious but proceed — I\'ll manage', v:'4'},{t:'Feel anxious but push through with support', v:'3'},{t:'Feel overwhelmed — I avoid it if I can', v:'1'}]},
+      {cat:'Transition — Loss Recognition', q:'Think about how AI is changing your profession. Which statement resonates most?', opts:[
+        {t:'The way I built my career is becoming obsolete — I\'ve accepted that', v:'ep'},{t:'I know things are changing but I\'m holding on to what I know', v:'er'},{t:'I\'m between old and new — let go but haven\'t found footing', v:'nz'},{t:'I can see the future and I\'m moving toward it', v:'nb'},{t:'I don\'t think AI will significantly change what I do', v:'pt'}]},
+      {cat:'Transition — Identity Shift', q:'Has your professional identity — how you describe what you do — changed in the past 12 months?', opts:[
+        {t:'Yes, significantly — I describe myself differently now', v:'nb'},{t:'It\'s shifting — I\'m experimenting', v:'nz'},{t:'Not really — but I sense it needs to', v:'e'},{t:'No — I am what I\'ve always been', v:'pt'}]},
+      {cat:'Transition — Emotional State', q:'Which of these do you experience most often right now?', opts:[
+        {t:'Excitement about new possibilities', v:'nb'},{t:'Confusion — ideas but can\'t commit to a direction', v:'nz'},{t:'Grief or frustration about what\'s being lost', v:'e'},{t:'Numbness — just going through the motions', v:'nzd'},{t:'Calm certainty about my path', v:'nb2'}]},
+      {cat:'Transition — Openness', q:'If offered a completely different role tomorrow — different function, different industry — well-paid and values-aligned, would you take it?', opts:[
+        {t:'Yes, without hesitation', v:'nb'},{t:'Probably, but I\'d need to think', v:'nz'},{t:'Very reluctant to leave what I know', v:'e'},{t:'No — I want to stay on my current path', v:'pt'}]},
+      {cat:'Career Drivers', q:'If you could only keep ONE thing in your next career move, what would it be?', opts:[
+        {t:'Being recognised as an expert', v:'tf'},{t:'Leading teams, making strategic decisions', v:'gm'},{t:'Freedom to work on my own terms', v:'au'},{t:'A stable position with predictable income', v:'se'},{t:'Building something of my own', v:'en'},{t:'Making a meaningful impact on others', v:'sv'}]},
+      {cat:'Career Drivers', q:'What would make you leave an otherwise perfect job?', opts:[
+        {t:'Not being able to use my specialised skills', v:'tf'},{t:'No path to leadership', v:'gm'},{t:'Too many rules and restrictions', v:'au'},{t:'Uncertainty about the company\'s future', v:'se'},{t:'No room to create or innovate', v:'en'},{t:'Feeling my work doesn\'t help anyone', v:'sv'}]},
+      {cat:'Career Drivers', q:'Which trade-off would you accept most willingly?', opts:[
+        {t:'Less money for more creative freedom', v:'au'},{t:'Less prestige for more stability', v:'se'},{t:'Less freedom for more influence and impact', v:'gm'},{t:'Less stability for deeper expertise', v:'tf'}]},
+      {cat:'Career Drivers', q:'Five years from now, the ideal version of your professional life looks like:', opts:[
+        {t:'The go-to expert people seek out', v:'tf'},{t:'Running an organisation or major division', v:'gm'},{t:'Working on projects I choose, on my schedule', v:'au'},{t:'Secure, well-paying role in a solid organisation', v:'se'},{t:'Built a business or venture from scratch', v:'en'},{t:'Making a real difference through my work', v:'sv'}]},
+      {cat:'AI Exposure', q:'What percentage of your current daily work could realistically be done by AI tools today?', opts:[
+        {t:'More than 60%', v:'5'},{t:'30–60%', v:'4'},{t:'10–30%', v:'3'},{t:'Less than 10%', v:'2'},{t:'I genuinely don\'t know', v:'3'}]},
+      {cat:'AI Exposure', q:'Is your organisation actively replacing or reducing roles because of AI?', opts:[
+        {t:'Yes — people have been let go', v:'5'},{t:'Yes, through attrition, not layoffs', v:'4'},{t:'Not yet, but clear plans and discussions', v:'3'},{t:'Not that I\'m aware of', v:'2'},{t:'Actually hiring more because of AI', v:'1'}]},
+      {cat:'Adaptive Capacity', q:'If you lost your income tomorrow, how long could you sustain your current lifestyle?', opts:[
+        {t:'12+ months', v:'5'},{t:'6–12 months', v:'4'},{t:'3–6 months', v:'3'},{t:'1–3 months', v:'2'},{t:'Less than 1 month', v:'1'}]},
+      {cat:'Adaptive Capacity', q:'How easily could your top 3 professional skills be applied in a completely different industry?', opts:[
+        {t:'Very easily — my skills are universal', v:'5'},{t:'Somewhat — with reframing and adaptation', v:'4'},{t:'With difficulty — quite specific to my field', v:'2'},{t:'I\'m not sure what my transferable skills are', v:'1'}]},
+      {cat:'Adaptive Capacity', q:'If you needed a new professional opportunity, how many people could you contact who would actively help?', opts:[
+        {t:'20+ across different industries', v:'5'},{t:'10–20, mostly in my current field', v:'4'},{t:'5–10 — close colleagues and friends', v:'3'},{t:'Fewer than 5', v:'1'}]},
+      {cat:'Adaptive Capacity', q:'How would you describe your current relationship with AI tools?', opts:[
+        {t:'Daily user — integrated in my workflow', v:'5'},{t:'Experimented, use it occasionally', v:'4'},{t:'Tried it but don\'t use regularly', v:'3'},{t:'Aware but haven\'t really used it', v:'2'},{t:'Actively avoid or resist it', v:'1'}]},
+      {cat:'Professional Profile', q:'Which best describes your current or most recent role?', opts:[
+        {t:'C-Suite / Board', v:'cs'},{t:'VP / Director / Head of Department', v:'vp'},{t:'Senior Manager / Team Lead', v:'sm'},{t:'Mid-level Professional / Specialist', v:'ml'},{t:'Early Career (< 5 years)', v:'ec'}]},
+      {cat:'Professional Profile', q:'What industry do you work in?', opts:[
+        {t:'Technology / Software', v:'tech'},{t:'Finance / Banking / Insurance', v:'fin'},{t:'Consulting / Professional Services', v:'cons'},{t:'Manufacturing / Engineering', v:'mfg'},{t:'Healthcare / Pharma', v:'health'},{t:'Media / Marketing / Creative', v:'media'},{t:'Other', v:'other'}]},
+      {cat:'Open Reflection', q:'In 2–3 sentences: what is the biggest professional challenge you\'re facing right now because of AI?', type:'text'},
+      {cat:'Open Reflection', q:'What would you most want to walk away with after 6 weeks in a group of professionals navigating the same disruption?', type:'text'},
+      {cat:'', q:'', type:'final'}
+    ];
+
+    const quizModal = document.getElementById('quizModal');
+    const quizInline = document.getElementById('quizInline');
+    const startBtn = document.getElementById('startQuiz');
+    const qContainer = document.getElementById('quizQuestions');
+    const optsContainer = document.getElementById('quizOptions');
+    const textInput = document.getElementById('quizTextInput');
+    const textarea = document.getElementById('quizTextarea');
+    const backBtn = document.getElementById('quizBack');
+    const fillBar = document.getElementById('quizFill');
+    const currentNum = document.getElementById('quizCurrent');
+    const totalNum = document.getElementById('quizTotal');
+    const totalQ = QUESTIONS.length - 1; // exclude final
+    let current = 0;
+    const answers = {};
+
+    totalNum.textContent = totalQ;
+
+    function render(idx) {
+        const item = QUESTIONS[idx];
+        const isFinal = item.type === 'final';
+        const isText = item.type === 'text';
+
+        // Progress
+        currentNum.textContent = Math.min(idx + 1, totalQ);
+        fillBar.style.width = (idx / totalQ * 100) + '%';
+        backBtn.style.visibility = idx === 0 ? 'hidden' : 'visible';
+
+        // Question
+        if (isFinal) {
+            qContainer.innerHTML = `
+                <h3 style="font-weight:800;font-size:clamp(1.6rem,3.5vw,2.8rem);color:var(--black);line-height:1.2;margin-bottom:1rem;">Almost done. Where should we send your report?</h3>
+                <p style="font-size:clamp(1.2rem,2vw,1.8rem);color:rgba(0,0,0,0.6);margin-bottom:2.5rem;line-height:1.6;">Your personalised AI Career Disruption Readiness Report will be ready in minutes.</p>
+                <div class="quiz-field"><label>Email</label><input type="email" id="quizEmail" placeholder="you@company.com"></div>
+                <div class="quiz-field"><label>LinkedIn Profile</label><input type="url" id="quizLinkedin" placeholder="linkedin.com/in/yourname"></div>
+                <div class="quiz-field"><label>Phone Number</label><input type="tel" id="quizPhone" placeholder="+44 7700 900000"></div>
+                <div class="quiz-field"><label>Preferred Contact Method</label><select id="quizContact"><option value="">Select...</option><option value="whatsapp">WhatsApp</option><option value="telegram">Telegram</option></select></div>
+                <button class="btn btn-black quiz-submit" id="quizSubmit">Get My Report &rarr;</button>`;
+            optsContainer.innerHTML = '';
+            textInput.style.display = 'none';
+            document.getElementById('quizSubmit').addEventListener('click', () => {
+                const email = document.getElementById('quizEmail').value;
+                const linkedin = document.getElementById('quizLinkedin').value;
+                const phone = document.getElementById('quizPhone').value;
+                const contact = document.getElementById('quizContact').value;
+                if (!email) { document.getElementById('quizEmail').focus(); return; }
+                if (!phone) { document.getElementById('quizPhone').focus(); return; }
+                if (!contact) { document.getElementById('quizContact').focus(); return; }
+
+                // Send lead + answers to Google Sheets via Apps Script
+                const payload = {
+                    email, linkedin, phone, contact,
+                    timestamp: new Date().toISOString(),
+                    answers: QUESTIONS.map((q, i) => ({
+                        question: q.q,
+                        category: q.cat,
+                        answer: answers[i] || ''
+                    }))
+                };
+                fetch(APPS_SCRIPT_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(payload),
+                    redirect: 'follow'
+                }).catch(() => {});
+
+                quizInline.innerHTML = `
+                    <div style="text-align:center;padding:4rem 0;">
+                        <h3 style="font-weight:900;font-size:clamp(1.6rem,3vw,2.5rem);color:var(--black);margin-bottom:1.5rem;">Thank you.</h3>
+                        <p style="font-size:clamp(1.2rem,2vw,1.8rem);color:rgba(0,0,0,0.6);line-height:1.6;">Your personalised AI Career Disruption Readiness Report<br>is being prepared and will be sent to <strong style="color:var(--black);">${email}</strong></p>
+                    </div>`;
+            });
+        } else {
+            qContainer.innerHTML = `<p class="quiz-category">${item.cat}</p><h3>${item.q}</h3>`;
+
+            if (isText) {
+                optsContainer.innerHTML = '';
+                textInput.style.display = 'block';
+                textarea.value = answers[idx] || '';
+                textarea.focus();
+                // Add continue button for text
+                optsContainer.innerHTML = `<button class="btn btn-black quiz-submit" id="quizTextNext" style="margin-top:auto;opacity:${answers[idx]&&answers[idx].length>5?1:0.3};pointer-events:${answers[idx]&&answers[idx].length>5?'all':'none'}">Continue &rarr;</button>`;
+                document.getElementById('quizTextNext').addEventListener('click', () => {
+                    if (textarea.value.length > 5) { current++; render(current); }
+                });
+            } else {
+                textInput.style.display = 'none';
+                optsContainer.innerHTML = item.opts.map((o, i) =>
+                    `<button class="quiz-option${answers[idx]===o.v?' selected':''}" data-value="${o.v}"><span class="opt-num">${i+1}</span> ${o.t}</button>`
+                ).join('');
+
+                optsContainer.querySelectorAll('.quiz-option').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        answers[current] = btn.dataset.value;
+                        optsContainer.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('selected'));
+                        btn.classList.add('selected');
+                        setTimeout(() => { if (current < QUESTIONS.length - 1) { current++; render(current); } }, 350);
+                    });
+                });
+            }
+        }
+    }
+
+    startBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        quizModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        render(0);
+    });
+
+    document.getElementById('quizClose').addEventListener('click', () => {
+        quizModal.classList.remove('open');
+        document.body.style.overflow = '';
+    });
+
+    document.getElementById('quizOverlay').addEventListener('click', () => {
+        quizModal.classList.remove('open');
+        document.body.style.overflow = '';
+    });
+
+    textarea.addEventListener('input', () => {
+        answers[current] = textarea.value;
+        const btn = document.getElementById('quizTextNext');
+        if (btn) {
+            const ok = textarea.value.length > 5;
+            btn.style.opacity = ok ? 1 : 0.3;
+            btn.style.pointerEvents = ok ? 'all' : 'none';
+        }
+    });
+
+    backBtn.addEventListener('click', () => { if (current > 0) { current--; render(current); } });
+
+    document.addEventListener('keydown', (e) => {
+        if (!quizModal.classList.contains('open')) return;
+        if (QUESTIONS[current].type === 'text' || QUESTIONS[current].type === 'final') return;
+        const key = parseInt(e.key);
+        const opts = optsContainer.querySelectorAll('.quiz-option');
+        if (key >= 1 && key <= opts.length) opts[key - 1].click();
+    });
+
+    render(0);
+
+    // ─── Particle Logo ───
+    (function() {
+        const canvas = document.getElementById('particleCanvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let W, H, particles = [], mouse = { x: -9999, y: -9999 };
+        const GOLD = '#C4A265';
+        const PARTICLE_COUNT = 9000;
+        const PARTICLE_SIZE = 1;
+        const RETURN_SPEED = 0.03;
+        const MOUSE_RADIUS = 120;
+        const PUSH_FORCE = 18;
+
+        function resize() {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            W = rect.width;
+            H = rect.height;
+            canvas.width = W * devicePixelRatio;
+            canvas.height = H * devicePixelRatio;
+            ctx.scale(devicePixelRatio, devicePixelRatio);
+            generateParticles();
+        }
+
+        // Use pre-extracted points from symbol.png
+        function getShapePoints() {
+            if (typeof SYMBOL_POINTS === 'undefined') return [];
+            const targetH = H * 0.9;
+            const scale = targetH / SYMBOL_H;
+            const scaledW = SYMBOL_W * scale;
+            const scaledH = SYMBOL_H * scale;
+            const offsetX = (W - scaledW) / 2;
+            const offsetY = (H - scaledH) / 2;
+            return SYMBOL_POINTS.map(p => ({
+                x: p[0] * scale + offsetX,
+                y: p[1] * scale + offsetY
+            }));
+        }
+
+        function generateParticles() {
+            const points = getShapePoints();
+            if (!points.length) return;
+            particles = [];
+            for (let i = 0; i < PARTICLE_COUNT; i++) {
+                const p = points[Math.floor(Math.random() * points.length)];
+                const jitter = 1.5;
+                const homeX = p.x + (Math.random() - 0.5) * jitter;
+                const homeY = p.y + (Math.random() - 0.5) * jitter;
+                // Start from random position across the entire canvas
+                const angle = Math.random() * Math.PI * 2;
+                const dist = Math.random() * Math.max(W, H) * 0.8;
+                particles.push({
+                    homeX: homeX,
+                    homeY: homeY,
+                    x: W / 2 + Math.cos(angle) * dist,
+                    y: H / 2 + Math.sin(angle) * dist,
+                    vx: 0, vy: 0,
+                    size: PARTICLE_SIZE,
+                    alpha: 1
+                });
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, W, H);
+            for (const p of particles) {
+                const dx = mouse.x - p.x;
+                const dy = mouse.y - p.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < MOUSE_RADIUS) {
+                    const force = (MOUSE_RADIUS - dist) / MOUSE_RADIUS * PUSH_FORCE;
+                    const angle = Math.atan2(dy, dx) + (Math.random() - 0.5) * 1.8;
+                    p.vx -= Math.cos(angle) * force * (0.6 + Math.random() * 0.8);
+                    p.vy -= Math.sin(angle) * force * (0.6 + Math.random() * 0.8);
+                }
+
+                p.vx += (p.homeX - p.x) * RETURN_SPEED;
+                p.vy += (p.homeY - p.y) * RETURN_SPEED;
+                p.vx *= 0.88;
+                p.vy *= 0.88;
+                p.x += p.vx;
+                p.y += p.vy;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(196, 162, 101, 1)';
+                ctx.fill();
+            }
+            requestAnimationFrame(animate);
+        }
+
+        const heroSection = canvas.closest('.hero');
+        document.addEventListener('mousemove', (e) => {
+            const rect = heroSection.getBoundingClientRect();
+            if (e.clientY >= rect.top && e.clientY <= rect.bottom && e.clientX >= rect.left && e.clientX <= rect.right) {
+                mouse.x = e.clientX - rect.left;
+                mouse.y = e.clientY - rect.top;
+            } else {
+                mouse.x = -9999;
+                mouse.y = -9999;
+            }
+        });
+
+        window.addEventListener('resize', resize);
+        resize();
+        animate();
+    })();
+</script>
+
+</body>
+</html>
